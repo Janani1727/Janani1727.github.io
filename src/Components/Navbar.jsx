@@ -3,19 +3,23 @@ import Images from "../Images/logo.jpg"
 import {
   Image,
   Text,
-  Flex
+  Flex,
+  position
 } from '@chakra-ui/react';
 export default function Nav() {
   return (
     <>
-        <div style={{ border:"0px solid red",height:"80px",backgroundColor:"#fd8990",fontFamily:"cursive"}}> 
-          <Flex gap={"20px"} color={"white"} fontSize={"32px"} >
+        <div style={{ border:"0px solid red",width:"100%",height:"90px",backgroundColor:"#fe8a91",position:"fixed",top:"0px",
+         zIndex:"99"
+      }}> 
+        
+          <Flex gap={"15px"} color={"white"} fontSize={"30px"} >
             <div style={{marginLeft:"30px",display:"flex"}}>
             <Image src={Images}  borderRadius={"50%"} height={"50px"} mt={"20px"}  /> 
             <Text ml={"10px"}  mt={"22px"}>Janani</Text>
             </div>
 
-             <div style={{display:"flex", gap:"40px",marginLeft:"47%"}}>
+             <div style={{display:"flex", gap:"40px",marginLeft:"44%"}}>
              <Text>Home</Text>
              <Text>About</Text>
              <Text>Skills</Text>
