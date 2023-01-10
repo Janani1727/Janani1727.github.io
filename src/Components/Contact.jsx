@@ -4,14 +4,15 @@ import { Image,Text, Button,Heading ,Input} from "@chakra-ui/react"
 import Fade from "react-reveal/Fade"
 import {FaPhone} from "react-icons/fa"
 import {SiGmail} from "react-icons/si"
+import {TbMessages} from "react-icons/tb"
 
 const Contact = () => {
   return (
     <>
     
-    <Heading mr={"65%"} fontSize={40}   color={"#fe8a91"}>Contact</Heading>
+    <Heading mr={"65%"} fontSize={40}   color={"#fe8a91"}>Contact <TbMessages color="white" className="bounce"/></Heading>
            
-    <div style={{ border: "0px solid white", height: "700px", fontFamily: "cursive", marginTop: "50px", fontSize: "50px",display:"flex" }}>
+    <div className="contact" style={{ border: "0px solid white", height: "600px", fontFamily: "cursive", fontSize: "50px",display:"flex" }}>
 
        
 
@@ -33,7 +34,7 @@ const Contact = () => {
             <Input  variant='flushed'  border={"1px solid #fe8a91"} h={"50px"} w={"90%"} fontSize={"20px"} backgroundColor={"black"}  color={"white"} placeholder='Enter Your Email'/>
             <Input  variant='flushed'mt={"20px"} border={"1px solid #fe8a91"} h={"100px"} w={"90%"}fontSize={"20px"} backgroundColor={"black"} color={"white"} placeholder='Enter Your Message'/>
             <Button 
-              backgroundColor={"#fe8a91"}
+              backgroundColor={"#ff6188"}
               color={"white"}
               width={"30%"}
               h={"50px"}

@@ -2,10 +2,11 @@ import React from 'react'
 import Zoom from "react-reveal/Zoom"
 import {GridItem,Heading, Image,Grid,Box} from "@chakra-ui/react"
 import GitHubCalendar from 'react-github-calendar';
+import {FaGithub} from "react-icons/fa"
 const Stats = () => {
   return (
     <>
-    <Heading mr={"60%"} fontSize={40} color={"#fe8a91"}>My Github Stats</Heading>
+    <Heading mr={"60%"} fontSize={40} color={"#fe8a91"}>My Github Stats <FaGithub color='white' className='bounce'/></Heading>
    
     <Box>
       <div style={{display:"flex",width:"79%",margin:"auto"}}>
