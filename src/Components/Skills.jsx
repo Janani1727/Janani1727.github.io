@@ -9,7 +9,7 @@ import {
     Image,
     Container,
     Text,
-    background
+ 
 
 } from "@chakra-ui/react"
 
@@ -30,107 +30,109 @@ const Skills = () => {
  
     return(
         <>
-        <div style={{border:"0px solid white",marginTop:"100px"}}>
-        <Heading mr={"70%"} fontSize={40} mt={"70px"} color={"#fe8a91"}>Skills  <SlSettings  className="bounce" color={"white"}/></Heading> 
-      <Box className="skills" border={"0px solid white"} height={"500px"}>
+        <div style={{marginTop:"100px"}}>
+        <Heading mr={["0%","74%","70%"]} fontSize={40} color={"#fe8a91"}>Skills 
+        <Text mt={"-50px"} marginLeft={["250px","160px","290px"]}><SlSettings  className="bounce" color={"white"}/></Text>
+         </Heading> 
+      <Box className="skills" display={["inline", "flex", "flex"]} border={"0px solid white"} mt={"30px"} height={["800px","500px","500px"]}>
       <Flex>
         <Fade left>
-     <Container w={"500px"} marginTop={"20px"} marginLeft={"160px"}>
+     <Container w={["200px","300px","530px"]} marginTop={["30px","30px","80px"]} marginLeft={["2px","10px","160px"]}>
     <Grid  h='200px' 
-  templateRows='repeat(4, 1fr)'
-  templateColumns='repeat(4, 1fr)'
-  gap={4}>
+
+  templateColumns={['repeat(4, 1fr)','repeat(3, 1fr)','repeat(4, 1fr)']}
+  gap={["5px","4px","30px"]}>
   
-  <GridItem  w='90%' h='110' border={"0px solid red"} color='#e44f26'  boxShadow={"base"} fontWeight={"700"}
+  <GridItem  w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' border={"0px solid red"} color='#e44f26'  boxShadow={"base"} fontWeight={"700"}
     
   >
    
-    <FaHtml5 fontSize={"80px"} color={"#e44f26"}
+    <FaHtml5  color={"#e44f26"}
     />
  
-   <Text mt={"2px"}>  HTML</Text>
+   <Text fontSize={["18px","20px","22px"]} mr={["10px","20px","20px"]} mt={"2px"}>  HTML</Text>
   </GridItem>
   
-  <GridItem  w='90%' h='110' color={"#0066b6"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem  w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#0066b6"}  boxShadow={"base"} fontWeight={"700"} >
     
-  <FaCss3  fontSize={"80px"} color={"#0066b6"}
+  <FaCss3 color={"#0066b6"}
   />
-  CSS 
+   <Text fontSize={["18px","20px","22px"]} mr={["5px","30px","0px"]} mt={"2px"}> CSS</Text>
   </GridItem>
 
-  <GridItem  w='90%' h='110' color={"#e4d04b"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem  w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#e4d04b"}  boxShadow={"base"} fontWeight={"700"} >
     
-    <FaJs  fontSize={"80px"} color={"#e4d04b"}
+    <FaJs  color={"#e4d04b"}
     />
-    <Text mt={"2px"}>JS </Text>
+   <Text fontSize={["18px","20px","22px"]} mr={["5px","50px","0px"]} mt={"2px"}> JS</Text>
   </GridItem>
 
-  <GridItem w='90%' h='110' color={"#00cdf2"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#00cdf2"}  boxShadow={"base"} fontWeight={"700"} >
    
-    <FaReact fontSize={"80px"} color={"#00cdf2"} 
+    <FaReact  color={"#00cdf2"} 
     />
-    ReactJS
+  <Text fontSize={["18px","20px","22px"]} mr={["5px","20px","0px"]} mt={"2px"}> React</Text>
   </GridItem>
  
-  <GridItem   w='90%' h='110'  color={"#48aaeb"} boxShadow={"base"} fontWeight={"700"}
+  <GridItem  w={['90%','90%','90%']} fontSize={["60px","60px","80px"]} h='110'  color={"#48aaeb"} boxShadow={"base"} fontWeight={"700"}
   
   >
     
-    <SiVisualstudiocode color={"#48aaeb"} fontSize={"80px"}
+    <SiVisualstudiocode color={"#48aaeb"} 
     />
-    VsCode
+    <Text fontSize={["18px","20px","22px"]} mr={["5px","20px","0px"]} mt={"2px"}> VsCode</Text>
   </GridItem>
   
-  <GridItem w='90%' h='110'  color={"#679d5a"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110'  color={"#679d5a"}  boxShadow={"base"} fontWeight={"700"} >
     
-    <FaNodeJs color={"#679d5a"} fontSize={"80px"}
+    <FaNodeJs color={"#679d5a"} 
     />
-   NodeJS
+   <Text fontSize={["18px","20px","22px"]} mr={["0px","35px","0px"]} mt={"2px"}>NodeJs</Text>
   </GridItem>
  
-  <GridItem w='90%' h='110' color={"#764abc"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#764abc"}  boxShadow={"base"} fontWeight={"700"} >
     
-    <SiRedux fontSize={"80px"} color={"#764abc"}
+    <SiRedux  color={"#764abc"}
     />
-    REDUX
+    <Text fontSize={["18px","20px","22px"]} mr={["5px","20px","0px"]} mt={"2px"}> REDUX</Text>
   </GridItem>
   
-  <GridItem w='90%' h='110' color={"#4ba13e"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#4ba13e"}  boxShadow={"base"} fontWeight={"700"} >
     
-  <SiMongodb fontSize={"80px"} color={"#4ba13e"}
+  <SiMongodb  color={"#4ba13e"}
     
   />
- MongoDB
+ <Text fontSize={["18px","20px","22px"]} mr={["5px","20px","0px"]} mt={"2px"}>MongoDb</Text>
   </GridItem>
   
   
   
-  <GridItem w='90%' h='110' color={"#e4d04b"}  boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#e4d04b"}  boxShadow={"base"} fontWeight={"700"} >
     
-    <SiExpress fontSize={"90px"} color={"#e4d04b"}
+    <SiExpress  color={"#e4d04b"}
     />
-    ExpressJS
+    <Text fontSize={["18px","20px","22px"]} mr={["5px","20px","0px"]} mt={"2px"}> ExpressJS</Text>
   </GridItem>
   
-  <GridItem w='90%' h='110' color={"grey"} boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"grey"} boxShadow={"base"} fontWeight={"700"} >
    
-    <FaGithub fontSize={"90px"} color={"grey"}
+    <FaGithub  color={"grey"}
     />
-    GitHub
+    <Text fontSize={["18px","20px","22px"]} mr={["22px","20px","0px"]} mt={"2px"}>GitHub</Text>
   </GridItem>
  
-  <GridItem w='90%' h='110' color={"#e44c30"} boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"#e44c30"} boxShadow={"base"} fontWeight={"700"} >
     
-    <FaGitAlt fontSize={"90px"} color={"#e44c30"}
+    <FaGitAlt color={"#e44c30"}
     />
-    GIT
+  <Text fontSize={["18px","20px","22px"]} mr={["5px","35px","0px"]} mt={"2px"}> GIT</Text>
   </GridItem>
   
-  <GridItem w='90%' h='110' color={"#44bcb9"} boxShadow={"base"} fontWeight={"700"} >
+  <GridItem w={['90%','90%','90%']} fontSize={["60px","50px","70px"]} h='110' color={"#44bcb9"} boxShadow={"base"} fontWeight={"700"} >
     
-    <SiChakraui fontSize={"90px"} color={"#44bcb9"}
+    <SiChakraui  color={"#44bcb9"}
     />
-   ChakraUI
+ <Text fontSize={["18px","20px","22px"]} mr={["5px","6px","-2px"]} mt={"6px"}> ChakraUI</Text>
   </GridItem>
   
 
@@ -138,14 +140,14 @@ const Skills = () => {
    </Container>
    </Fade>
 
-<Fade right>
-        <Image 
-        borderRadius={"50%"} marginTop={"-51px"} width={"600px"}  marginLeft={"130px"}
-        src=' https://i.pinimg.com/originals/16/f5/20/16f5204718e98858b1d4466e911e90ed.gif '/>
-      </Fade>
+
+      <Box w={["0%", "60%", "40%"]} mt={["50px","100px","30px"]} ml={["50px","80px","50px"]} border={"0px solid white"}  rounded={["50%", "50%", "50%"]}>
+              <Image  rounded={["50%", "50%", "50%"]} src="https://i.pinimg.com/originals/16/f5/20/16f5204718e98858b1d4466e911e90ed.gif" alt="img" />
+            </Box>
       </Flex>
       </Box>
            
+     
           
       </div>  
            

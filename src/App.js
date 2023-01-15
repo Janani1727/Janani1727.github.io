@@ -23,7 +23,7 @@ function App() {
     return isLoading ? (
         <Loader />
     ) : (
-      <div className="App">
+      <div style={{width:"100%"}} className="App">
                 <AnimatedCursor
                     innerSize={10}
                     outerSize={30}
@@ -36,11 +36,11 @@ function App() {
             <Box backgroundColor={"black"} fontFamily={"cursive"}>
             <Nav />
             <Home />
-            <About />
+             <About />
             <Projects />
-            <Skills />
-            <Stats />
-            <Contact />
+          <Skills />
+             <Stats />
+             <Contact /> 
             
             </Box>
         </div>

@@ -1,77 +1,126 @@
-import { React} from 'react';
-import Images from "../Images/logo.jpg"
-import {
-  Image,
-  Text,
-  Flex,
-  position,
+import  React , {useState , useEffect}from 'react';
+import {Box,Button,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+ import NavLink from "../Components/Navlink"
+import { Link } from 'react-scroll';
+import { DownloadIcon } from "@chakra-ui/icons";
+import Downloads from "../Downloads/Janani_Jayaraman_Resume.pdf"
 
-  Box
-} from '@chakra-ui/react';
-import {Link} from "react-scroll"
-export default function Nav() {
 
-  const menus = [
-    { id: 0, name: "Home", css: "home" },
-    { id: 1, name: "About", css: "about" },
-    { id: 2, name: "Projects", css: "projects" },
-    { id: 3, name: "Skills", css: "skills" },
-    { id: 4, name: "Contact", css: "contact" },
-  ]
-  return (
- 
-    <>
-        <div style={{ border:"0px solid red",width:"100%",height:"90px",backgroundColor:"#fe8a91",position:"fixed",top:"0px",
-         zIndex:"99"
-      }}> 
-        
-          <Flex gap={"15px"} color={"white"} fontSize={"30px"} >
-            <div style={{marginLeft:"30px",display:"flex"}}>
-            <Image src={Images}  borderRadius={"50%"} height={"50px"} mt={"20px"}  /> 
-            <Text ml={"10px"}  mt={"22px"}>Janani</Text>
-            </div>
 
-             <div style={{display:"flex", gap:"30px",marginLeft:"38%"}}>
-            
-             {menus.map((item) => (
-          <Link
-            key={item.id}
-            activeClass="active"
-            to={item.css}
-            spy={true}
-            smooth={true}
-            duration={1000}
-          >
-            <Box mt={"25px"} key={item.id}>{item.name}</Box>
-          </Link>
-           ))} 
-             <Text mt={"25px"}>
-              <a href="https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link" 
-              style={{ color:"white", textDecoration:"none"}} target={"blank"}>
-              Resume
-              </a>
-            </Text>
-            </div>
+const links = [
+  { name: "About", id: "about" },
+  { name: "Projects", id: "projects" },
+  { name: "Skills", id: "skills" },
+  { name: "Contact", id: "contact" },
+  { name: "Resume", id: "resume" }
 
-          </Flex>
-        </div>
-        
+];
 
-<Box backgroundColor={"white"}>
-{/* {menus.map((item) => (
-          <Link
-            key={item.id}
-            activeClass="active"
-            to={item.css}
-            spy={true}
-            smooth={true}
-            duration={500}
-          >
-            <Box key={item.id}>{item.name}</Box>
-          </Link>
-           ))} */}
-          </Box>
-    </>
-  );
+
+
+export default function Simple() {
+  const { isOpen, onOpen, onClose } = useDisclosure();
+
+  const [isscroll, setisscroll] = useState(false);
+
+  function isScrolling() {
+    if (window.scrollY > 80) {
+    setisscroll(true);
+    } else {
+    setisscroll(false);
+    }
 }
 
+useEffect(() => {
+  window.addEventListener("scroll", isScrolling);
+  return () => {
+  window.removeEventListener("scroll");
+  }
+}, [])
+
+
+  return (
+    <>
+
+
+      <Box  zIndex={1} bg={isscroll? "#fe8a91" : "#fe8a91"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"}  position={"fixed"} width={"100%"} marginTop={"-50px"} justifyContent={"center"}>
+      <Flex h={16} alignItems={'center'}  gap={1}>
+      <Link to="/">
+        <Text fontSize={["18px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} ><ChevronLeftIcon color={isscroll? "black" : "white"}/> Janani<span color={isscroll? "black" : "white"}>/</span>
+        <ChevronRightIcon color={isscroll? "black" : "white"} /></Text>
+      </Link>
+          <IconButton
+          ml={"60%"}
+            size={'md'}
+            icon={isOpen ? <CloseIcon /> : <HamburgerIcon color={"black"} />}
+            aria-label={'Open Menu'}
+            display={{ md: 'none' }}
+            onClick={isOpen ? onClose : onOpen}
+          />
+          <HStack spacing={8} alignItems={'center'}>
+         
+            <HStack
+              as={'nav'}
+              spacing={12}
+              ml={"90%"}
+              display={{ base: 'none', md: 'flex' }}>
+            
+            {links.map((link, i) => (
+              <NavLink
+              
+              fontSize={["lg", "xl", "2xl"]}
+            
+                key={i}
+                to={link.id}
+                name={link.name}
+                // fontSize={25}
+           
+                onClick={() => onClose()}
+              />
+
+            
+            ))}
+              <Box>
+                <a href={Downloads} download>
+                  <Button ml={["18px", "-220px", "8px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon />}>
+                    Resume</Button>
+                </a>
+              </Box>
+           
+            </HStack>
+          </HStack>
+          <Flex alignItems={'center'} gap={2}>
+        
+
+          </Flex>
+        </Flex>
+
+        {isOpen ? (
+          <Box pb={4} display={{ md: 'none' }} 
+          ml='200px'
+          >
+            <Stack as={'nav'} spacing={4}   >
+            {links.map((link, i) => (
+              <NavLink
+              
+                key={i}
+                to={link.id}
+                name={link.name}
+                w="xm"
+                
+                onClick={() => onClose() }
+              />
+            ))}
+            </Stack>
+            
+          </Box>
+        ) : null}
+
+        
+      </Box>
+
+     
+</>
+);
+}
