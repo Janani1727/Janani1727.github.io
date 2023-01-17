@@ -1,10 +1,9 @@
 import  React , {useState , useEffect}from 'react';
-import {Box,Button,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/react';
+import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
-import { DownloadIcon } from "@chakra-ui/icons";
-import Downloads from "../Downloads/Janani_Jayaraman_Resume.pdf"
+
 
 
 
@@ -13,7 +12,7 @@ const links = [
   { name: "Projects", id: "projects" },
   { name: "Skills", id: "skills" },
   { name: "Contact", id: "contact" },
-  { name: "Resume", id: "resume" }
+  
 
 ];
 
@@ -78,13 +77,13 @@ useEffect(() => {
            
                 onClick={() => onClose()}
               />
-
+              
             
             ))}
-              <Box>
-                <a href={Downloads} download>
-                  <Button ml={["18px", "-220px", "8px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon />}>
-                    Resume</Button>
+              <Box   fontSize={["lg", "xl", "2xl"]}>
+                <a href="https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link" target="_blank" rel="noreferrer">
+                  
+                   Resume 
                 </a>
               </Box>
            

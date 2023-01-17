@@ -23,7 +23,7 @@ function App() {
     return isLoading ? (
         <Loader />
     ) : (
-      <div style={{width:"100%"}} className="App">
+      <div style={{width:"100%" , backgroundColor:"black"}}  className="App">
                 <AnimatedCursor
                     innerSize={10}
                     outerSize={30}

@@ -27,7 +27,7 @@ import {
 } from '@chakra-ui/react';
 import { FaLink } from 'react-icons/fa'
 import { AiOutlineGithub } from 'react-icons/ai'
-import Zoom from "react-reveal/Zoom"
+
 export default function Projects() {
     return (
         <>
@@ -95,14 +95,14 @@ export default function Projects() {
                                 <Flex gap={20} fontWeight={700} >
                                     <Button mt={"20px"} ml={["20px","70px","20px"]} h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"} >
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://effortless-sunflower-25458d.netlify.app/">Demo <FaLink /> </a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://effortless-sunflower-25458d.netlify.app/" target="_blank" rel="noreferrer">Demo <FaLink /> </a>
 
                                         </Text>
                                     </Button>
 
                                     <Button mt={"20px"} ml={["20px","20px","20px"]} h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"}>
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/Marceline">Github <AiOutlineGithub /></a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/Marceline" target="_blank" rel="noreferrer">Github <AiOutlineGithub /></a>
 
                                         </Text>
                                     </Button>
@@ -165,14 +165,14 @@ export default function Projects() {
                                 <Flex gap={20} fontWeight={700} >
                                     <Button mt={"20px"} ml={["20px","70px","20px"]} h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"} >
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://intent-com.vercel.app">Demo <FaLink /> </a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://intent-com.vercel.app" target="_blank" rel="noreferrer">Demo <FaLink /> </a>
 
                                         </Text>
                                     </Button>
 
                                     <Button mt={"20px"} ml={["20px","20px","20px"]}  h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"}>
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/lazy-name-5157">Github <AiOutlineGithub /></a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/lazy-name-5157" target="_blank" rel="noreferrer">Github <AiOutlineGithub /></a>
 
                                         </Text>
                                     </Button>
@@ -236,14 +236,14 @@ export default function Projects() {
                                 <Flex gap={20} fontWeight={700} >
                                     <Button mt={"20px"} ml={["20px","70px","20px"]} h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"} >
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://tranquil-conkies-35d1d7.netlify.app/">Demo <FaLink /> </a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://tranquil-conkies-35d1d7.netlify.app/" target="_blank" rel="noreferrer">Demo <FaLink /> </a>
 
                                         </Text>
                                     </Button>
 
                                     <Button mt={"20px"} ml={["20px","20px","20px"]}  h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"}>
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/pharmEasy">Github <AiOutlineGithub /></a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/pharmEasy" target="_blank" rel="noreferrer">Github <AiOutlineGithub /></a>
 
                                         </Text>
                                     </Button>
@@ -306,14 +306,14 @@ export default function Projects() {
                                 <Flex gap={20} fontWeight={700} >
                                     <Button mt={"20px"}ml={["20px","70px","20px"]}  h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"} >
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://courageous-custard-0d0b9c.netlify.app">Demo <FaLink /> </a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://courageous-custard-0d0b9c.netlify.app" target="_blank" rel="noreferrer">Demo <FaLink /> </a>
 
                                         </Text>
                                     </Button>
 
                                     <Button mt={"20px"} ml={["20px","20px","20px"]}  h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"}>
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/magnificent-celery-6982">Github <AiOutlineGithub /></a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/magnificent-celery-6982" target="_blank" rel="noreferrer">Github <AiOutlineGithub /></a>
 
                                         </Text>
                                     </Button>
@@ -376,14 +376,14 @@ export default function Projects() {
                                 <Flex gap={20} fontWeight={700} >
                                     <Button mt={"20px"} ml={["20px","70px","20px"]}  h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"} >
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://luxury-maamoul-f31818.netlify.app/">Demo <FaLink /> </a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://luxury-maamoul-f31818.netlify.app/" target="_blank" rel="noreferrer">Demo <FaLink /> </a>
 
                                         </Text>
                                     </Button>
 
                                     <Button mt={"20px"} ml={["20px","20px","20px"]}  h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
                                         <Text color={"white"}>
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/YouTube">Github <AiOutlineGithub /></a>
+                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href="https://github.com/Janani1727/YouTube" target="_blank" rel="noreferrer">Github <AiOutlineGithub /></a>
 
                                         </Text>
                                     </Button>
