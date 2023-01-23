@@ -5,7 +5,7 @@ import Fade from "react-reveal/Fade"
 import { FaPhone } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { TbMessages } from "react-icons/tb"
-
+import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 const Contact = () => {
   return (
     <>
@@ -19,7 +19,7 @@ const Contact = () => {
       <Box className="contact" border={"0px solid white"} height={["400px", "600px", "600px"]} fontFamily={"cursive"} fontSize={"50px"} display={"flex"}>
         <Fade left>
           <div>
-            <Image borderRadius={"50%"} width={["0px", "0px", "500px"]} marginLeft={"160px"} mt={["40px", "40px", "100px"]} src="https://cdn.dribbble.com/users/1163294/screenshots/10966353/media/243c2ccb8d2bb385c030dfcc69e7b5f9.gif" />
+            <Image borderRadius={"50%"} width={["0px", "0px", "500px"]} marginLeft={"160px"} mt={["40px", "40px", "150px"]} src="https://cdn.dribbble.com/users/1163294/screenshots/10966353/media/243c2ccb8d2bb385c030dfcc69e7b5f9.gif" />
           </div>
         </Fade>
 
@@ -36,6 +36,11 @@ const Contact = () => {
               <Text mt={"10px"}><SiGmail color='white' /></Text>
               <Text> jayaramanjanani73@gmail.com</Text>
             </Box>
+
+            <Box ml={["140px", "8px", "8px"]} mt="15px" gap="15px" display="flex" color="#13022c">
+                <a href="https://github.com/Janani1727" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineGithub />}></Button></a>
+                <a href="https://www.linkedin.com/in/janani-jayaraman-412758238/" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineLinkedin />}></Button></a>
+              </Box>
 
             <form action="https://getform.io/f/4814c61f-fa5d-4dbe-bb30-ca58ff9e3517" method="POST">
               <Input variant='flushed' border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} type="text" name="name" />

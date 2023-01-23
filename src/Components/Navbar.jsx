@@ -8,6 +8,7 @@ import { Link } from 'react-scroll';
 
 
 const links = [
+  { name: "Home", id: "home" },
   { name: "About", id: "about" },
   { name: "Projects", id: "projects" },
   { name: "Skills", id: "skills" },
@@ -46,7 +47,7 @@ useEffect(() => {
       <Box  zIndex={1} bg={isscroll? "#fe8a91" : "#fe8a91"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"}  position={"fixed"} width={"100%"} marginTop={"-50px"} justifyContent={"center"}>
       <Flex h={16} alignItems={'center'}  gap={1}>
       <Link to="/">
-        <Text ml={["20px","40px","70px"]} fontSize={["18px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} > Janani
+        <Text ml={["20px","40px","50px"]} fontSize={["18px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} > Janani
         </Text>
       </Link>
           <IconButton
