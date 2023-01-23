@@ -10,13 +10,13 @@ export default function Home() {
             <div id="about" style={{ border: "0px solid white", height: "650px", fontFamily: "cursive", marginTop: "50px", fontSize: "50px" }}>
 
                 <Box id="About" p="30px 0px" pt="10px" h={["360px", "430px", "550px"]}>
-                    <Box w="95%" m="auto" display={["inline", "flex", "flex"]} color={"white"} justifyContent="space-evenly" alignItems="center">
+                    <Box w="95%" m="auto" display={["inline", "flex", "flex"]} color={"white"} justifyContent="space-between" alignItems="center">
 
                         <Image w={["50%", "30%", "25%"]} border={"15px solid #fe8a91"} borderRadius={"50%"} m="auto" src={logo} alt="img" />
                         <Box w={["90%", "90%", "40%"]} m="auto" >
                             <Text textAlign={["center", "center", "left"]}
                                 fontWeight="400" mt="20px" fontSize={["3xl", "3xl", "5xl"]} color={"#fe8a91"}>About Me
-                                <Text mt={["-40px", "-35px", "-50px"]} marginLeft={["260px", "330px", "240px"]} w={["0px", "40px", "40px"]}>
+                                <Text mt={["-40px", "-38px", "-50px"]} marginLeft={["240px", "310px", "240px"]} w={["0px", "40px", "40px"]}>
                                     <FaUserAlt color="white" className="bounce" />
                                 </Text>
                             </Text>

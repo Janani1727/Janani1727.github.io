@@ -46,11 +46,11 @@ useEffect(() => {
       <Box  zIndex={1} bg={isscroll? "#fe8a91" : "#fe8a91"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"}  position={"fixed"} width={"100%"} marginTop={"-50px"} justifyContent={"center"}>
       <Flex h={16} alignItems={'center'}  gap={1}>
       <Link to="/">
-        <Text fontSize={["18px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} ><ChevronLeftIcon color={isscroll? "black" : "white"}/> Janani<span color={isscroll? "black" : "white"}>/</span>
-        <ChevronRightIcon color={isscroll? "black" : "white"} /></Text>
+        <Text ml={["20px","40px","70px"]} fontSize={["18px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} > Janani
+        </Text>
       </Link>
           <IconButton
-          ml={"60%"}
+          ml={["60%","75%","70%"]}
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon color={"black"} />}
             aria-label={'Open Menu'}
@@ -97,7 +97,7 @@ useEffect(() => {
 
         {isOpen ? (
           <Box pb={4} display={{ md: 'none' }} 
-          ml='200px'
+          ml='50px'
           >
             <Stack as={'nav'} spacing={4}   >
             {links.map((link, i) => (
