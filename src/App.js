@@ -5,6 +5,7 @@ import Projects from "./Components/Projects";
 import Skills from "./Components/Skills";
 import Stats from "./Components/Stats";
 import Contact from "./Components/Contact"
+import Footer from './Components/Footer';
 import './App.css';
 import AnimatedCursor from "react-animated-cursor"
 import Loader from './Components/Loader';
@@ -41,7 +42,7 @@ function App() {
           <Skills />
              <Stats />
              <Contact /> 
-            
+            <Footer />
             </Box>
         </div>
        

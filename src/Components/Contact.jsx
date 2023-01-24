@@ -1,12 +1,14 @@
 import React from 'react'
 
-import { Image, Text, Button, Heading, Box, Input } from "@chakra-ui/react"
+import { Image, Text, Button, Heading, Box, Input,Center } from "@chakra-ui/react"
 import Fade from "react-reveal/Fade"
 import { FaPhone } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
 import { TbMessages } from "react-icons/tb"
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 const Contact = () => {
+
+
   return (
     <>
 
@@ -37,15 +39,15 @@ const Contact = () => {
               <Text> jayaramanjanani73@gmail.com</Text>
             </Box>
 
-            <Box ml={["140px", "8px", "8px"]} mt="15px" gap="15px" display="flex" color="#13022c">
+            <Box ml={["6px", "8px", "8px"]} mt="15px" gap="15px" display="flex" color="#13022c">
                 <a href="https://github.com/Janani1727" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineGithub />}></Button></a>
                 <a href="https://www.linkedin.com/in/janani-jayaraman-412758238/" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineLinkedin />}></Button></a>
               </Box>
 
             <form action="https://getform.io/f/4814c61f-fa5d-4dbe-bb30-ca58ff9e3517" method="POST">
-              <Input variant='flushed' border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} type="text" name="name" />
-              <Input variant='flushed' mt={"20px"} border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"}  type="email" name="email" />
-              <Input variant='flushed' mt={"20px"} border={"1px solid #fe8a91"} h={"100px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"}  type="text" name="message" />
+              <Input variant='flushed' border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} placeholder="Enter your Name" type="text" name="name" />
+              <Input variant='flushed' mt={"20px"} border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"}  placeholder="Enter your Email" type="email" name="email" />
+              <Input variant='flushed' mt={"20px"} border={"1px solid #fe8a91"} h={"100px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} placeholder="Enter Message" type="text" name="message" />
 
               <Button backgroundColor={"#ff6188"}
                 color={"white"}
@@ -55,10 +57,6 @@ const Contact = () => {
                 fontSize={"25px"}
                 ml={["70px", "150px", "180px"]} type="submit">Send</Button>
             </form>
-
-
-
-
 
           </Box>
 
