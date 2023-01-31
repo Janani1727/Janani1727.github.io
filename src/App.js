@@ -34,7 +34,7 @@ function App() {
                     outerScale={0}
                 />
       
-            <Box backgroundColor={"black"} fontFamily={"cursive"}>
+            <Box backgroundColor={"black"} fontFamily={['sans-serif','sans-serif',"cursive"]}>
             <Nav />
             <Home />
              <About />

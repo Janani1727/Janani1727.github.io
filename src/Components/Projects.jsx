@@ -2,12 +2,12 @@
 import "../Components/styles"
 import {
     Box,
-    Center,
+   
     Heading,
     Text,
     Stack,
     Grid,
-    GridItem,
+    
     Image,
     Flex,
     Button
@@ -15,10 +15,9 @@ import {
 import { FaLink } from 'react-icons/fa'
 import { AiOutlineGithub } from 'react-icons/ai'
 import {
-    FaHtml5,
-    FaReact,
-    FaJs,
-    FaCss3,
+  
+    FaReact
+   
 
 } from 'react-icons/fa';
 
@@ -78,13 +77,13 @@ export default function Projects() {
 
         <Box  border= {"0px solid white"} marginTop={["-150px","-280px","0px"]} >
              <Heading className="projects" mr={["10%","54%","70%"]} fontSize={40} mt={"20px"} color={"#fe8a91"}>Projects
-                 <Text mt={["-40px","-44px","-42px"]} marginLeft={["250px","250px","320px"]}><FaReact className="bounce" color={"white"} /> </Text>
+                 <Text mt={["-40px","-44px","-42px"]} marginLeft={["250px","250px","320px"]}><FaReact className="spin" color={"white"} /> </Text>
              </Heading>
             
             
 
-        <Box border={"0px solid red"}  m={"auto"} w={"80%"} h={["2900px","3200px","1050px"]}>
-            <Grid  margin={"auto"} width={["100%", "95%", "100%"]} border={"0px solid white"} templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
+        <Box border={"0px solid red"}  m={"auto"} w={"80%"} h={["2800px","3200px","1050px"]}>
+            <Grid  margin={"auto"} ml={["-5%", "0%", "0%"]} width={["110%", "95%", "100%"]} border={"0px solid white"} templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
 
                 gap={["10px", "20px", "30px"]} rowGap={["10px", "20px", "20px"]} >
 
@@ -136,20 +135,25 @@ export default function Projects() {
 
 
                                 <Flex gap={20} fontWeight={700} >
-                                    <Button mt={"20px"} ml={["20px", "40px", "20px"]} h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
-                                        <Text color={"white"} >
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href={project.livelink} target="_blank" rel="noreferrer">Demo <FaLink /> </a>
+                                    <a  href={project.livelink} target="_blank" rel="noreferrer">
+                                    <Button mt={"20px"} ml={["1px", "40px", "20px"]} h={"35px"} w={"120px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"} _hover={{backgroundColor: "black",color:"white" }}>
+                                        <Text display={"flex"} color={"white"} >
+                                            <Text fontSize={"20px"} style={{ textDecoration: "none", color: "white", display: "flex" }}>Demo  </Text>
+                                            <Text fontSize={"21px"} ml={"8px"}><FaLink  className="bounce"/></Text>
+
 
                                         </Text>
                                     </Button>
-
-                                    <Button mt={"20px"} ml={["20px", "20px", "20px"]} h={"35px"} w={"170px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"}>
-                                        <Text color={"white"}>
-                                            <a style={{ textDecoration: "none", color: "white", display: "flex" }} href={project.gitlink} target="_blank" rel="noreferrer">Github <AiOutlineGithub /></a>
-
+                                    </a>
+                                   
+                                   <a  href={project.gitlink} target="_blank" rel="noreferrer">
+                                    <Button mt={"20px"} ml={["-50px", "20px", "0px"]} h={"35px"} w={"120px"} bgColor={"#ff6188"} border={"1px solid #ff6188"} borderRadius={"5px"} _hover={{backgroundColor: "black",color:"white" }}>
+                                        <Text  display={"flex"} color={"white"}>
+                                            <Text fontSize={"20px"} style={{ textDecoration: "none", color: "white", display: "flex" }} >Github</Text>
+                                            <Text ml={"10px"} fontSize={"22px"}>  <AiOutlineGithub className="bounce" /></Text>
                                         </Text>
                                     </Button>
-
+                                    </a>
                                 </Flex>
 
 

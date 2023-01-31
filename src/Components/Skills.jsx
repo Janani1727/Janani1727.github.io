@@ -30,14 +30,14 @@ const Skills = () => {
  
     return(
         <>
-        <div style={{marginTop:"200px"}}>
-        <Heading mr={["0%","74%","70%"]} fontSize={40} color={"#fe8a91"}>Skills 
-        <Text mt={"-45px"} marginLeft={["250px","160px","290px"]}><SlSettings  className="bounce" color={"white"}/></Text>
+        <Box marginTop={["330px","240px","200px"]}>
+        <Heading mr={["15%","51%","60%"]} fontSize={40} color={"#fe8a91"}>Skills & Tools
+        <Text mt={"-45px"} marginLeft={["305px","300px","450px"]}><SlSettings  className="spin" color={"white"}/></Text>
          </Heading> 
       <Box className="skills" display={["inline", "flex", "flex"]} border={"0px solid white"} mt={"-12px"} height={["800px","500px","500px"]}>
       <Flex>
         <Fade left>
-     <Container w={["200px","300px","530px"]} marginTop={["30px","60px","80px"]} marginLeft={["14px","10px","160px"]}>
+     <Container w={["200px","300px","530px"]} marginTop={["30px","60px","80px"]} marginLeft={["28px","10px","160px"]}>
     <Grid  h='200px' 
 
   templateColumns={['repeat(4, 1fr)','repeat(3, 1fr)','repeat(4, 1fr)']}
@@ -150,7 +150,7 @@ const Skills = () => {
            
      
           
-      </div>  
+      </Box>  
            
 
         

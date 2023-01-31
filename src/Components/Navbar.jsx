@@ -1,10 +1,10 @@
 import  React , {useState , useEffect}from 'react';
-import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/react';
+import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text,Image} from '@chakra-ui/react';
 import { HamburgerIcon, CloseIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
 
-
+import "../Components/styles"
 
 
 const links = [
@@ -47,8 +47,11 @@ useEffect(() => {
       <Box  zIndex={1} bg={isscroll? "#fe8a91" : "#fe8a91"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"}  position={"fixed"} width={"100%"} marginTop={"-50px"} justifyContent={"center"}>
       <Flex h={16} alignItems={'center'}  gap={1}>
       <Link to="/">
-        <Text ml={["20px","40px","50px"]} fontSize={["18px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} > Janani
+        <Box display={"flex"}>
+        {/* <Image src={J} w={"120px"}  h={"200px"}/> */}
+        <Text className='wobble'  ml={["20px","40px","50px"]} fontSize={["22px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} > Janani
         </Text>
+        </Box>
       </Link>
           <IconButton
           ml={["60%","75%","70%"]}

@@ -8,7 +8,7 @@ const Stats = () => {
     <>
     <Box mt={["200px","80px","100px"]}>
     <Heading mr={["10%","60%","60%"]} fontSize={["30px", "30px", "40px"]} color={"#fe8a91"}>My Github Stats 
-    <Text mt={"-38px"} fontSize={["30px", "30px", "40px"]} marginLeft={["300px","270px","470px"]}><FaGithub color='white' className='bounce'/></Text>
+    <Text mt={"-38px"} fontSize={["30px", "30px", "40px"]} marginLeft={["300px","270px","470px"]}><FaGithub color='white' className='wobble'/></Text>
     </Heading>
    
     <Box>

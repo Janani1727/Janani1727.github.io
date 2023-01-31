@@ -1,6 +1,6 @@
 import { Image, Text, Box, Button } from "@chakra-ui/react"
 import Downloads from "../Downloads/Janani_Jayaraman_Resume.pdf"
-import Fade from "react-reveal/Fade"
+import "../Components/styles"
 import Typewriter from "typewriter-effect";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { DownloadIcon } from "@chakra-ui/icons";
@@ -15,7 +15,7 @@ export default function Home() {
               <Box ml={["100px", "5px", "8px"]}>
                 <Text fontWeight="5" display="flex" fontSize={["3xl", "28px", "5xl"]}> Hi I'm Janani</Text>
               </Box>
-              <Box ml={["18px", "3px", "8px"]} textAlign={["left", "left", "left"]} fontSize={["27px", "28px", "5xl"]}>
+              <Box ml={["18px", "3px", "8px"]} textAlign={["left", "left", "left"]} fontSize={["25px", "28px", "5xl"]}>
                 <Typewriter
 
                   options={{
@@ -33,12 +33,12 @@ export default function Home() {
 
 
               <Box ml={["140px", "8px", "8px"]} mt="15px" gap="15px" display="flex" color="#13022c">
-                <a href="https://github.com/Janani1727" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineGithub />}></Button></a>
-                <a href="https://www.linkedin.com/in/janani-jayaraman-412758238/" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineLinkedin />}></Button></a>
+                <a href="https://github.com/Janani1727" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineGithub  className="bounce"/>}></Button></a>
+                <a href="https://www.linkedin.com/in/janani-jayaraman-412758238/" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineLinkedin className="bounce" />}></Button></a>
               </Box>
               <Box>
                 <a href={Downloads} download>
-                  <Button ml={["18px", "-220px", "-620px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon />}>
+                  <Button ml={["18px", "-220px", "-620px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon className="hithere" />}>
                     Resume</Button>
                 </a>
               </Box>
