@@ -45,7 +45,7 @@ const Contact = () => {
               </Box>
 
             <form action="https://getform.io/f/4814c61f-fa5d-4dbe-bb30-ca58ff9e3517" method="POST">
-              <Input variant='flushed' border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} placeholder="Enter your Name" type="text" name="name" />
+              <Input  variant='flushed' border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} placeholder="Enter your Name" type="text" name="name" />
               <Input variant='flushed' mt={"20px"} border={"1px solid #fe8a91"} h={"50px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"}  placeholder="Enter your Email" type="email" name="email" />
               <Input variant='flushed' mt={"20px"} border={"1px solid #fe8a91"} h={"100px"} w={["150%", "120%", "90%"]} fontSize={"20px"} backgroundColor={"black"} color={"white"} placeholder="Enter Message" type="text" name="message" />
 

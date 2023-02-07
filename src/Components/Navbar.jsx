@@ -1,11 +1,11 @@
 import  React , {useState , useEffect}from 'react';
-import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text,Image} from '@chakra-ui/react';
-import { HamburgerIcon, CloseIcon, ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
+import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/react';
+import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
-
+import Janani_Jayaraman_Resume from "../Downloads/Janani_Jayaraman_Resume.pdf"
 import "../Components/styles"
-
+import { DownloadIcon } from "@chakra-ui/icons";
 
 const links = [
   { name: "Home", id: "home" },
@@ -85,8 +85,20 @@ useEffect(() => {
             
             ))}
               <Box   fontSize={["lg", "xl", "2xl"]}>
-                <a href="https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link" target="_blank" rel="noreferrer">
-                  
+
+
+                <a
+                onClick={()=>{
+                  window.open(
+                    "https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link","_blank", "noreferrer"
+                  )
+                }}
+
+                href={Janani_Jayaraman_Resume}
+                download
+                // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
+                >  
+               
                    Resume 
                 </a>
               </Box>
