@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { Image, Text, Button, Heading, Box, Input,Center } from "@chakra-ui/react"
+import { Image, Text, Button, Heading, Box, Input} from "@chakra-ui/react"
 import Fade from "react-reveal/Fade"
 import { FaPhone } from "react-icons/fa"
 import { SiGmail } from "react-icons/si"
@@ -18,7 +18,7 @@ const Contact = () => {
         </Text>
       </Heading>
 
-      <Box className="contact" border={"0px solid white"} height={["400px", "600px", "600px"]} fontFamily={"cursive"} fontSize={"50px"} display={"flex"}>
+      <Box className="contact" border={"0px solid white"} height={["400px", "600px", "600px"]}  fontSize={"50px"} display={"flex"}>
         <Fade left>
           <div>
             <Image borderRadius={"50%"} width={["0px", "0px", "500px"]} marginLeft={"160px"} mt={["40px", "40px", "150px"]} src="https://cdn.dribbble.com/users/1163294/screenshots/10966353/media/243c2ccb8d2bb385c030dfcc69e7b5f9.gif" />
@@ -55,7 +55,11 @@ const Contact = () => {
                 h={"50px"}
                 borderRadius={"10px"}
                 fontSize={"25px"}
-                ml={["70px", "150px", "180px"]} type="submit">Send</Button>
+                ml={["70px", "150px", "180px"]}
+                _hover={{
+                  color:"black"
+              }}
+                type="submit">Send</Button>
             </form>
 
           </Box>

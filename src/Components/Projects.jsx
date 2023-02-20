@@ -1,4 +1,5 @@
 // import Zoom from "react-reveal/Zoom"
+import { useState } from "react";
 import "../Components/styles"
 import {
     Box,
@@ -7,7 +8,6 @@ import {
     Text,
     Stack,
     Grid,
-    
     Image,
     Flex,
     Button
@@ -69,10 +69,60 @@ export default function Projects() {
             techstack: "HTML, CSS, JavaScript",
             livelink: "https://luxury-maamoul-f31818.netlify.app/",
             gitlink: "https://github.com/Janani1727/YouTube"
+        },
+        {
+            name: "1800.flowers.com",
+            img: "https://user-images.githubusercontent.com/109611448/213923457-9a382633-b69c-4c7b-bb37-3212faacc999.png",
+            type: "Group",
+            desc: " 1800flowers.com Clone is NextJS e-commerce web application that allows you to buy flower products online with effortable prices, it is a foods gift retailer and distribution company in the United States. ,..",
+             techstack: "HTML, CSS, NextJS , Rest API",
+            livelink: "https://flower18.vercel.app/",
+            gitlink: "https://github.com/Janani1727/1800-Flowers.com"
         }
+        ,
+        {
+            name: "Rock-Paper-Scissors",
+            img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
+            type: "Individual",
+            desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
+             techstack: "HTML, CSS, React JS",
+            livelink: "https://rps-janani1727.vercel.app/",
+            gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors"
+        }
+        // ,
+        // {
+        //     name: "Rock-Paper-Scissors",
+        //     img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
+        //     type: "Individual",
+        //     desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
+        //      techstack: "HTML, CSS, React JS",
+        //     livelink: "https://rps-janani1727.vercel.app/",
+        //     gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors"
+        // }
+        // ,
+        // {
+        //     name: "Rock-Paper-Scissors",
+        //     img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
+        //     type: "Individual",
+        //     desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
+        //      techstack: "HTML, CSS, React JS",
+        //     livelink: "https://rps-janani1727.vercel.app/",
+        //     gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors"
+        // }
     ]
 
+const [project,setProject]=useState(projectdata.slice(0,6))
 
+    const handleLoadMore=()=>{
+            if(project.length>6){
+                setProject([...projectdata.slice(0,6)])
+            }else{
+                let temp=projectdata.slice(0,projectdata.length)
+                setProject(temp)
+            }
+       
+    }
+   
     return (
 
         <Box  border= {"0px solid white"} marginTop={["-150px","-280px","0px"]} >
@@ -82,12 +132,12 @@ export default function Projects() {
             
             
 
-        <Box border={"0px solid red"}  m={"auto"} w={"80%"} h={["2800px","3200px","1050px"]}>
+        <Box border={"0px solid red"}  m={"auto"} w={"80%"} h={"auto"}>
             <Grid  margin={"auto"} ml={["-5%", "0%", "0%"]} width={["110%", "95%", "100%"]} border={"0px solid white"} templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(1, 1fr)", lg: "repeat(3, 1fr)" }}
 
                 gap={["10px", "20px", "30px"]} rowGap={["10px", "20px", "20px"]} >
 
-                {projectdata && projectdata.map((project) => {
+                {projectdata && project.map((project) => {
 
                     return (
                    
@@ -172,6 +222,19 @@ export default function Projects() {
 
 
         </Box>
+        <Button backgroundColor={"#ff6188"}
+                color={"white"}
+                w={["90%", "50%", "10%"]}
+                h={"50px"}
+                borderRadius={"10px"}
+                fontSize={"25px"}
+                ml={["70px", "150px", "20px"]}
+                mt={["70px", "150px", "50px"]}
+
+                _hover={{
+                    color:"black"
+                }}
+        onClick={handleLoadMore}>{project.length<=6 ? "view more" : "view less"}</Button>
         </Box>
     )
    

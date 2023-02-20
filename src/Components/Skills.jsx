@@ -30,7 +30,7 @@ const Skills = () => {
  
     return(
         <>
-        <Box marginTop={["330px","240px","200px"]}>
+        <Box marginTop={["110px","200px","200px"]}>
         <Heading mr={["15%","51%","60%"]} fontSize={40} color={"#fe8a91"}>Skills & Tools
         <Text mt={"-45px"} marginLeft={["305px","300px","450px"]}><SlSettings  className="spin" color={"white"}/></Text>
          </Heading> 
@@ -113,6 +113,8 @@ const Skills = () => {
     />
     <Text fontSize={["16px","20px","16px"]} mr={["5px","20px","0px"]} mt={"2px"}> ExpressJS</Text>
   </GridItem>
+
+  
   
   <GridItem w={['90%','100%','90%']} fontSize={["60px","60px","80px"]} h='110' color={"grey"} boxShadow={"base"} fontWeight={"700"} >
    
@@ -138,6 +140,8 @@ const Skills = () => {
 
    </Grid>
    </Container>
+
+   
    </Fade>
 
    <Fade right>

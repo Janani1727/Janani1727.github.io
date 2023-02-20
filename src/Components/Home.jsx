@@ -4,6 +4,7 @@ import "../Components/styles"
 import Typewriter from "typewriter-effect";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { DownloadIcon } from "@chakra-ui/icons";
+import Janani_Jayaraman_Resume from "../Downloads/Janani_Jayaraman_Resume.pdf"
 export default function Home() {
   return (
 
@@ -39,7 +40,20 @@ export default function Home() {
               <Box>
                 <a href={Downloads} download>
                   <Button ml={["18px", "-220px", "-620px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon className="hithere" />}>
-                    Resume</Button>
+                  <a
+                onClick={()=>{
+                  window.open(
+                    "https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link","_blank", "noreferrer"
+                  )
+                }}
+
+                href={Janani_Jayaraman_Resume}
+                download
+                // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
+                >  
+               
+                   Resume 
+                </a></Button>
                 </a>
               </Box>
             </Box>

@@ -8,7 +8,7 @@ import { FaUserAlt } from "react-icons/fa"
 export default function Home() {
     return (
         <>
-            <div id="about" style={{ border: "0px solid white", height: "650px", fontFamily: "cursive", marginTop: "50px", fontSize: "50px" }}>
+            <div id="about" style={{ border: "0px solid white", height: "650px", marginTop: "50px", fontSize: "50px" }}>
 
                 <Box id="About" p="30px 0px" pt="10px" h={["360px", "430px", "550px"]}>
 

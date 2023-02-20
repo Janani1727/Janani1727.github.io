@@ -5,7 +5,7 @@ import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Link } from 'react-scroll';
 import Janani_Jayaraman_Resume from "../Downloads/Janani_Jayaraman_Resume.pdf"
 import "../Components/styles"
-import { DownloadIcon } from "@chakra-ui/icons";
+// import { DownloadIcon } from "@chakra-ui/icons";
 
 const links = [
   { name: "Home", id: "home" },
