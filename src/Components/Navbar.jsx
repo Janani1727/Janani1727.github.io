@@ -3,7 +3,7 @@ import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/re
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
-import Janani_Jayaraman_Resume from "../Downloads/Janani_Jayaraman_Resume.pdf"
+import fw20_0358_Janani_Jayaraman_Resume from "../Downloads/fw20_0358_Janani_Jayaraman_Resume.pdf"
 import "../Components/styles"
 // import { DownloadIcon } from "@chakra-ui/icons";
 
@@ -94,7 +94,7 @@ useEffect(() => {
                   )
                 }}
 
-                href={Janani_Jayaraman_Resume}
+                href={fw20_0358_Janani_Jayaraman_Resume}
                 download
                 // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
                 >  

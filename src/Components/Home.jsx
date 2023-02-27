@@ -1,10 +1,10 @@
 import { Image, Text, Box, Button } from "@chakra-ui/react"
-import Downloads from "../Downloads/Janani_Jayaraman_Resume.pdf"
+
 import "../Components/styles"
 import Typewriter from "typewriter-effect";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { DownloadIcon } from "@chakra-ui/icons";
-import Janani_Jayaraman_Resume from "../Downloads/Janani_Jayaraman_Resume.pdf"
+import fw20_0358_Janani_Jayaraman_Resume from "../Downloads/fw20_0358_Janani_Jayaraman_Resume.pdf"
 export default function Home() {
   return (
 
@@ -38,7 +38,7 @@ export default function Home() {
                 <a href="https://www.linkedin.com/in/janani-jayaraman-412758238/" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineLinkedin className="bounce" />}></Button></a>
               </Box>
               <Box>
-                <a href={Downloads} download>
+                <a href={fw20_0358_Janani_Jayaraman_Resume} download>
                   <Button ml={["18px", "-220px", "-620px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon className="hithere" />}>
                   <a
                 onClick={()=>{
@@ -47,7 +47,7 @@ export default function Home() {
                   )
                 }}
 
-                href={Janani_Jayaraman_Resume}
+                href={fw20_0358_Janani_Jayaraman_Resume}
                 download
                 // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
                 >  
