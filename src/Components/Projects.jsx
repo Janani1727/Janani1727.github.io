@@ -25,14 +25,45 @@ export default function Projects() {
 
     let projectdata = [
         {
-            name: "Marceline",
-            img: "https://user-images.githubusercontent.com/109611448/214076643-2b0d92a9-bbcf-42e7-9ed1-6e94175383c8.png",
+            name: "Tata 1mg - (Full Stack)",
+            img: "https://user-images.githubusercontent.com/109611448/221431735-62052936-4778-495b-85b1-a79a2b79aae3.png",
             type: "Group",
-            desc: "SUGAR Cosmetics is a cruelty-free makeup brand that is high on style and higher on performan.The brand is inspired by and targeted towards bold, across......",
-            techstack: "HTML, CSS,JS",
-            livelink: "https://effortless-sunflower-25458d.netlify.app/",
-            gitlink: "https://github.com/Janani1727/Marceline"
+            desc: "Tata 1mg is India’s leading consumer health platform. It aspires to be the trusted health partner for all Indians and its mission is to make healthcare accessible, understandable and affordable ....",
+            techstack: "MERN Stack,Chakra UI,HTML,CSS",
+            livelink: "https://project-medicare-dji2-46q4qcrei-fullstackcrud.vercel.app/",
+            gitlink: "https://github.com/Prakashkumarjena700/Project_Medicare"
         },
+
+        {
+            name: "1800.flowers.com",
+            img: "https://user-images.githubusercontent.com/109611448/213923457-9a382633-b69c-4c7b-bb37-3212faacc999.png",
+            type: "Group",
+            desc: " 1800flowers.com Clone is NextJS e-commerce web application that allows you to buy flower products online with effortable prices, it is a foods gift retailer and distribution company in the United States. ,..",
+             techstack: "HTML, CSS, NextJS , Rest API",
+            livelink: "https://flower18.vercel.app/",
+            gitlink: "https://github.com/Janani1727/1800-Flowers.com"
+        }
+        ,
+        {
+            name: "YouTube",
+            img: "https://user-images.githubusercontent.com/109611448/214076913-6da9ef54-8886-4d3d-9f18-8ce28e3ca239.png",
+            type: "Individual",
+            desc: " YouTube is a global online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, is the second most .....",
+            techstack: "HTML, CSS, JavaScript",
+            livelink: "https://luxury-maamoul-f31818.netlify.app/",
+            gitlink: "https://github.com/Janani1727/YouTube"
+        },
+
+        {
+            name: "Rock-Paper-Scissors",
+            img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
+            type: "Individual",
+            desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
+             techstack: "HTML, CSS, React JS",
+            livelink: "https://rps-janani1727.vercel.app/",
+            gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors"
+        },
+
         {
             name: "Intern Theory",
             img: "https://user-images.githubusercontent.com/109611448/214076765-a8e0728f-6e95-4b82-bd49-38c0f92efb75.png",
@@ -42,6 +73,17 @@ export default function Projects() {
             livelink: "https://intent-com.vercel.app",
             gitlink: "https://github.com/Janani1727/lazy-name-5157"
         },
+
+        {
+            name: "Sugar Cosmetics",
+            img: "https://user-images.githubusercontent.com/109611448/214076643-2b0d92a9-bbcf-42e7-9ed1-6e94175383c8.png",
+            type: "Group",
+            desc: "SUGAR Cosmetics is a cruelty-free makeup brand that is high on style and higher on performan.The brand is inspired by and targeted towards bold, across......",
+            techstack: "HTML, CSS,JS",
+            livelink: "https://effortless-sunflower-25458d.netlify.app/",
+            gitlink: "https://github.com/Janani1727/Marceline"
+        },
+       
         {
             name: "PharmEasy",
             img: "https://user-images.githubusercontent.com/109611448/214076830-46d1043d-0a41-4606-9618-9f634c86baff.png",
@@ -61,34 +103,9 @@ export default function Projects() {
             livelink: "https://courageous-custard-0d0b9c.netlify.app",
             gitlink: "https://github.com/Janani1727/magnificent-celery-6982"
         },
-        {
-            name: "YouTube",
-            img: "https://user-images.githubusercontent.com/109611448/214076913-6da9ef54-8886-4d3d-9f18-8ce28e3ca239.png",
-            type: "Individual",
-            desc: " YouTube is a global online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, is the second most .....",
-            techstack: "HTML, CSS, JavaScript",
-            livelink: "https://luxury-maamoul-f31818.netlify.app/",
-            gitlink: "https://github.com/Janani1727/YouTube"
-        },
-        {
-            name: "1800.flowers.com",
-            img: "https://user-images.githubusercontent.com/109611448/213923457-9a382633-b69c-4c7b-bb37-3212faacc999.png",
-            type: "Group",
-            desc: " 1800flowers.com Clone is NextJS e-commerce web application that allows you to buy flower products online with effortable prices, it is a foods gift retailer and distribution company in the United States. ,..",
-             techstack: "HTML, CSS, NextJS , Rest API",
-            livelink: "https://flower18.vercel.app/",
-            gitlink: "https://github.com/Janani1727/1800-Flowers.com"
-        }
-        ,
-        {
-            name: "Rock-Paper-Scissors",
-            img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
-            type: "Individual",
-            desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
-             techstack: "HTML, CSS, React JS",
-            livelink: "https://rps-janani1727.vercel.app/",
-            gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors"
-        }
+       
+       
+       
         // ,
         // {
         //     name: "Rock-Paper-Scissors",
@@ -224,12 +241,12 @@ const [project,setProject]=useState(projectdata.slice(0,6))
         </Box>
         <Button backgroundColor={"#ff6188"}
                 color={"white"}
-                w={["90%", "50%", "10%"]}
+                w={["40%", "30%", "10%"]}
                 h={"50px"}
                 borderRadius={"10px"}
                 fontSize={"25px"}
-                ml={["70px", "150px", "20px"]}
-                mt={["70px", "150px", "50px"]}
+                ml={["40px", "20px", "20px"]}
+                mt={["70px", "100px", "50px"]}
 
                 _hover={{
                     color:"black"
