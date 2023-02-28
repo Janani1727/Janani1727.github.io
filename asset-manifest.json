@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.37302fc4.css",
-    "main.js": "/static/js/main.0328824f.js",
+    "main.js": "/static/js/main.1f9dcd5b.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fw20_0358-Janani-Jayaraman-Resume.pdf": "/static/media/fw20_0358-Janani-Jayaraman-Resume.696657f7b28e3cafe735.pdf",
     "static/media/logo.jpg": "/static/media/logo.ca139a134694fa47457f.jpg",
     "index.html": "/index.html",
     "main.37302fc4.css.map": "/static/css/main.37302fc4.css.map",
-    "main.0328824f.js.map": "/static/js/main.0328824f.js.map",
+    "main.1f9dcd5b.js.map": "/static/js/main.1f9dcd5b.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37302fc4.css",
-    "static/js/main.0328824f.js"
+    "static/js/main.1f9dcd5b.js"
   ]
 }
