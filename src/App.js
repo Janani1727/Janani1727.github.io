@@ -11,6 +11,7 @@ import AnimatedCursor from "react-animated-cursor"
 import Loader from './Components/Loader';
 import { useState,useEffect } from 'react';
 import {Box} from "@chakra-ui/react"
+
 function App() {
 
   const [isLoading, setIsLoading] = useState(true);
@@ -41,6 +42,7 @@ function App() {
             <Projects />
           <Skills />
              <Stats />
+            
              <Contact /> 
             <Footer />
             </Box>

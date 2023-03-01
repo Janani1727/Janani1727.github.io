@@ -1,10 +1,9 @@
 import { Image, Text, Box, Button } from "@chakra-ui/react"
-
 import "../Components/styles"
 import Typewriter from "typewriter-effect";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { DownloadIcon } from "@chakra-ui/icons";
-import fw20_0358_Janani_Jayaraman_Resume from "../Downloads/fw20_0358_Janani_Jayaraman_Resume.pdf"
+import Resume from "../../src/Downloads/fw20_0358-Janani-Jayaraman-Resume.pdf"
 export default function Home() {
   return (
 
@@ -33,13 +32,11 @@ export default function Home() {
 
 
 
-              <Box ml={["140px", "8px", "8px"]} mt="15px" gap="15px" display="flex" color="#13022c">
+              <Box ml={["80px", "8px", "18px"]} mt="15px" gap="15px" display="flex" color="#13022c">
                 <a href="https://github.com/Janani1727" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineGithub  className="bounce"/>}></Button></a>
                 <a href="https://www.linkedin.com/in/janani-jayaraman-412758238/" rel="noreferrer" target="_blank"><Button pr="0px" pl="5px" fontSize={["2xl", "3xl", "4xl"]} bg="white" color="#13022c" border="none" variant='solid' leftIcon={<AiOutlineLinkedin className="bounce" />}></Button></a>
-              </Box>
-              <Box>
-                <a href={fw20_0358_Janani_Jayaraman_Resume} download>
-                  <Button ml={["18px", "-220px", "-620px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon className="hithere" />}>
+                <a href={Resume} download>
+                  <Button ml={["8px", "20px", "20px"]} mt="2px"   fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon className="hithere" />}>
                   <a
                 onClick={()=>{
                   window.open(
@@ -47,7 +44,7 @@ export default function Home() {
                   )
                 }}
 
-                href={fw20_0358_Janani_Jayaraman_Resume}
+                href={Resume}
                 download
                 // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
                 >  
@@ -56,6 +53,25 @@ export default function Home() {
                 </a></Button>
                 </a>
               </Box>
+              {/* <Box>
+                <a href={Resume} download>
+                  <Button ml={["18px", "-220px", "-500px"]} mt="15px"  p={["15px 15px", "20px 20px", "25px 25px"]} fontSize={["md", "lg", "xl"]} bg="white" color="black" border="none" variant='solid' leftIcon={<DownloadIcon className="hithere" />}>
+                  <a
+                onClick={()=>{
+                  window.open(
+                    "https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link","_blank", "noreferrer"
+                  )
+                }}
+
+                href={Resume}
+                download
+                // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
+                >  
+               
+                   Resume 
+                </a></Button>
+                </a>
+              </Box> */}
             </Box>
             <Box p="5px" w={["75%", "70%", "45%"]} mt={["40px", "80px", "100px"]} rounded={["50%", "50%", "50%"]}>
               <Image w="100%" rounded={["50%", "50%", "50%"]} ml={["50px", "10px", "8px"]} src="https://cdn.dribbble.com/users/1163294/screenshots/10976010/media/0e33d764bd5c0bf01de99f52de897192.gif" alt="img" />

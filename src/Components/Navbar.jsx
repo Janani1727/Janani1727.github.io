@@ -3,7 +3,7 @@ import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/re
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
-import fw20_0358_Janani_Jayaraman_Resume from "../Downloads/fw20_0358_Janani_Jayaraman_Resume.pdf"
+import Resume from "../../src/Downloads/fw20_0358-Janani-Jayaraman-Resume.pdf"
 import "../Components/styles"
 // import { DownloadIcon } from "@chakra-ui/icons";
 
@@ -45,7 +45,7 @@ useEffect(() => {
 
 
       <Box  zIndex={1} bg={isscroll? "#fe8a91" : "#fe8a91"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"}  position={"fixed"} width={"100%"} marginTop={"-50px"} justifyContent={"center"}>
-      <Flex h={16} alignItems={'center'}  gap={1}>
+      <Flex h={16}  justifyContent="space-between" alignItems={'center'}  gap={1}>
       <Link to="/">
         <Box display={"flex"}>
         {/* <Image src={J} w={"120px"}  h={"200px"}/> */}
@@ -54,7 +54,7 @@ useEffect(() => {
         </Box>
       </Link>
           <IconButton
-          ml={["60%","75%","70%"]}
+          ml={["60%","75%","90%"]}
             size={'md'}
             icon={isOpen ? <CloseIcon /> : <HamburgerIcon color={"black"} />}
             aria-label={'Open Menu'}
@@ -66,7 +66,7 @@ useEffect(() => {
             <HStack
               as={'nav'}
               spacing={12}
-              ml={"90%"}
+           
               display={{ base: 'none', md: 'flex' }}>
             
             {links.map((link, i) => (
@@ -94,7 +94,7 @@ useEffect(() => {
                   )
                 }}
 
-                href={fw20_0358_Janani_Jayaraman_Resume}
+                href={Resume}
                 download
                 // leftIcon={<DownloadIcon className="hithere" color={"black"} />} 
                 >  

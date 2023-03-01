@@ -90,7 +90,7 @@ export default function Projects() {
             type: "Group",
             desc: "  PharmEasy offers 1 lakh+ medicines and health products across various categories ,and teleconsultations thereby serving their healthcare needs. which  your online  medicine......",
             techstack: "HTML, CSS, JavaScript",
-            livelink: "https://tranquil-conkies-35d1d7.netlify.app/",
+            livelink: "https://venerable-kleicha-918c6a.netlify.app/",
             gitlink: "https://github.com/Janani1727/lazy-name-5157"
         },
         
@@ -142,9 +142,9 @@ const [project,setProject]=useState(projectdata.slice(0,6))
    
     return (
 
-        <Box  border= {"0px solid white"} marginTop={["-150px","-280px","0px"]} >
+        <Box  border= {"0px solid white"} marginTop={["-150px","-200px","0px"]} >
              <Heading className="projects" mr={["10%","54%","70%"]} fontSize={40} mt={"20px"} color={"#fe8a91"}>Projects
-                 <Text mt={["-40px","-44px","-42px"]} marginLeft={["250px","250px","320px"]}><FaReact className="spin" color={"white"} /> </Text>
+                 <Text mt={["-40px","-44px","-42px"]} marginLeft={["280px","260px","320px"]}><FaReact className="spin" color={"white"} /> </Text>
              </Heading>
             
             
@@ -241,10 +241,10 @@ const [project,setProject]=useState(projectdata.slice(0,6))
         </Box>
         <Button backgroundColor={"#ff6188"}
                 color={"white"}
-                w={["40%", "30%", "10%"]}
+                w={["40%", "30%", "15%"]}
                 h={"50px"}
                 borderRadius={"10px"}
-                fontSize={"25px"}
+                fontSize={"22px"}
                 ml={["40px", "20px", "20px"]}
                 mt={["70px", "100px", "50px"]}
 
