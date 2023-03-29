@@ -12,13 +12,13 @@ const Contact = () => {
   return (
     <>
 
-      <Heading mr={["0%", "54%", "65%"]} fontSize={["30px", "40px", "40px"]} mt={["50px", "150px", "150px"]} color={"#fe8a91"}>Contact
+      <Heading id="contact" mr={["0%", "54%", "65%"]} fontSize={["30px", "40px", "40px"]} mt={["50px", "150px", "150px"]} color={"#fe8a91"}>Contact
         <Text mt={["-35px","-44px","-42px"]} fontSize={["30px", "40px", "40px"]} marginLeft={["250px", "250px", "350px"]}>
           <TbMessages color="white" className="bounce" />
         </Text>
       </Heading>
 
-      <Box className="contact" border={"0px solid white"} height={["400px", "600px", "600px"]}  fontSize={"50px"} display={"flex"}>
+      <Box  border={"0px solid white"} height={["400px", "600px", "600px"]}  fontSize={"50px"} display={"flex"}>
         <Fade left>
           <div>
             <Image borderRadius={"50%"} width={["0px", "0px", "500px"]} marginLeft={"160px"} mt={["40px", "40px", "150px"]} src="https://cdn.dribbble.com/users/1163294/screenshots/10966353/media/243c2ccb8d2bb385c030dfcc69e7b5f9.gif" />

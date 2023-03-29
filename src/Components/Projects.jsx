@@ -24,6 +24,17 @@ import {
 export default function Projects() {
 
     let projectdata = [
+
+        
+        {
+            name: "Candy Crush",
+            img: "https://user-images.githubusercontent.com/109611448/228455261-91680c90-90ad-4c0e-87bc-2150e6b0da6a.png",
+            type: "Individual",
+            desc: "Master match 3 or 4  puzzles with quick thinking and smart matching moves to be rewarded with sugar bonuses and tasty candy combos. Plan your moves by matching 3 or more candies in a row....",
+            techstack: "HTML, CSS, React JS",
+            livelink: "https://candy-topaz.vercel.app/",
+            gitlink: "https://github.com/Janani1727/Candy_Crush"
+        },
         {
             name: "Tata 1mg - (Full Stack)",
             img: "https://user-images.githubusercontent.com/109611448/221431735-62052936-4778-495b-85b1-a79a2b79aae3.png",
@@ -50,7 +61,7 @@ export default function Projects() {
             type: "Individual",
             desc: " YouTube is a global online video sharing and social media platform headquartered in San Bruno, California. It was launched on February 14, 2005, is the second most .....",
             techstack: "HTML, CSS, JavaScript",
-            livelink: "https://luxury-maamoul-f31818.netlify.app/",
+            livelink: "https://luminous-druid-c83136.netlify.app/",
             gitlink: "https://github.com/Janani1727/YouTube"
         },
 
@@ -142,8 +153,8 @@ const [project,setProject]=useState(projectdata.slice(0,6))
    
     return (
 
-        <Box  border= {"0px solid white"} marginTop={["-150px","-200px","0px"]} >
-             <Heading className="projects" mr={["10%","54%","70%"]} fontSize={40} mt={"20px"} color={"#fe8a91"}>Projects
+        <Box id="projects" border= {"0px solid white"} marginTop={["-150px","-200px","0px"]} >
+             <Heading  mr={["10%","54%","70%"]} fontSize={40} mt={"20px"} color={"#fe8a91"}>Projects
                  <Text mt={["-40px","-44px","-42px"]} marginLeft={["280px","260px","320px"]}><FaReact className="spin" color={"white"} /> </Text>
              </Heading>
             

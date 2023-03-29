@@ -4,7 +4,7 @@ import {
   Box,
   Grid,
   GridItem,
-  Flex,
+
   Heading,
   Image,
   Container,
@@ -25,14 +25,14 @@ import {
   SiRedux,
   SiMongodb,
   SiExpress,
-  SiChakraui,
+  
   SiVisualstudiocode,
 } from "react-icons/si";
 
 const Skills = () => {
   return (
     <>
-      <Box border={"0px solid yellow"} marginTop={["110px", "200px", "200px"]} mb={"40px"}>
+      <Box id="skills" border={"0px solid yellow"} marginTop={["110px", "200px", "200px"]} mb={"40px"}>
       
         <Heading mr={["45%", "55%", "70%"]} fontSize={40} color={"#fe8a91"}>
           Skills 
