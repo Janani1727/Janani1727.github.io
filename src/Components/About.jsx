@@ -26,7 +26,7 @@ export default function Home() {
                             </Text>
                             <Text mt={["20px", "14px", "25px"]} ml={["20px", "40px", 'auto']} fontSize={["15px", "20px", "25px"]} textAlign={["center", "left", "left"]}>
                                 
-                                Motivated and innovative aspiring full-stack web
+                                Motivated and innovative full-stack web
                                 developer with hands-on experience in building
                                 websites with MERN stack and various web
                                 technologies including HTML, CSS, and JS. Curious to
