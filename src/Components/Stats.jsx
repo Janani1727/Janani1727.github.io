@@ -1,6 +1,6 @@
 import React from "react";
 import Zoom from "react-reveal/Zoom";
-import { GridItem, Heading, Image, Grid, Box, Text } from "@chakra-ui/react";
+import {  Heading, Image,  Box, Text } from "@chakra-ui/react";
 import GitHubCalendar from "react-github-calendar";
 import { FaGithub } from "react-icons/fa";
 const Stats = () => {
@@ -48,7 +48,7 @@ const Stats = () => {
               />
             </Zoom>
           </Box>
-          <Grid mt={"50px"} mb={"50px"}>
+          {/* <Grid mt={"50px"} mb={"50px"}>
             <Zoom>
               <GridItem>
                 <Image
@@ -61,7 +61,7 @@ const Stats = () => {
                 />
               </GridItem>
             </Zoom>
-          </Grid>
+          </Grid> */}
           <Zoom>
             <Box
               border={"2px solid white"}

@@ -18,6 +18,33 @@ import { FaReact } from "react-icons/fa";
 export default function Projects() {
   let projectdata = [
     {
+      name: "Chat App  - (Full Stack)",
+      img: "https://user-images.githubusercontent.com/109611448/260457232-f41d1de8-224e-4b0c-9ec3-0e2807541e5c.png",
+      type: "Individual",
+      desc: "Chat App! This application allows users to send messages and record audio in a chat-like interface,Send text messages and record audio messages ,Emoji support for adding fun to your messages.",
+      techstack: "MERN Stack,Chakra UI,HTML,CSS",
+      livelink: "https://exact-space-frontend-t8hu.vercel.app/",
+      gitlink: "https://github.com/Janani1727/exactSpace_Frontend",
+    },
+    {
+      name: "Tata 1mg - (Full Stack)",
+      img: "https://user-images.githubusercontent.com/109611448/221431735-62052936-4778-495b-85b1-a79a2b79aae3.png",
+      type: "Group",
+      desc: "Tata 1mg is India’s leading consumer health platform. It aspires to be the trusted health partner for all Indians and its mission is to make healthcare accessible, understandable and affordable ....",
+      techstack: "MERN Stack,Chakra UI,HTML,CSS",
+      livelink:"https://project-medicare-fp24844q1-fullstackcrud.vercel.app/",
+      gitlink: "https://github.com/Prakashkumarjena700/Project_Medicare",
+    },
+    {
+      name: "1800.flowers.com  - (Full Stack)",
+      img: "https://user-images.githubusercontent.com/109611448/213923457-9a382633-b69c-4c7b-bb37-3212faacc999.png",
+      type: "Group",
+      desc: "1-800-Flowers.com, Inc. is a floral and foods gift retailer and distribution company in the United States. The company's focus, except for Mother's Day and Valentine's Day, is on gift baskets., . ,..",
+      techstack: "MERN Stack,Chakra UI,HTML,CSS",
+      livelink: "https://frontend-seven-ebon.vercel.app/",
+      gitlink: "https://github.com/JyotiranjanGhibila/1800Flower.com",
+    },
+    {
       name: "Candy Crush",
       img: "https://user-images.githubusercontent.com/109611448/228455261-91680c90-90ad-4c0e-87bc-2150e6b0da6a.png",
       type: "Individual",
@@ -25,6 +52,15 @@ export default function Projects() {
       techstack: "HTML, CSS, React JS",
       livelink: "https://candy-topaz.vercel.app/",
       gitlink: "https://github.com/Janani1727/Candy_Crush",
+    },
+    {
+      name: "Rock-Paper-Scissors",
+      img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
+      type: "Individual",
+      desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
+      techstack: "HTML, CSS, React JS",
+      livelink: "https://rps-janani1727.vercel.app/",
+      gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors",
     },
 
     {
@@ -36,25 +72,9 @@ export default function Projects() {
       livelink: "https://comfy-pavlova-dd4d1c.netlify.app/",
       gitlink: "https://github.com/Janani1727/Super-Mario",
     },
-    {
-      name: "Tata 1mg - (Full Stack)",
-      img: "https://user-images.githubusercontent.com/109611448/221431735-62052936-4778-495b-85b1-a79a2b79aae3.png",
-      type: "Group",
-      desc: "Tata 1mg is India’s leading consumer health platform. It aspires to be the trusted health partner for all Indians and its mission is to make healthcare accessible, understandable and affordable ....",
-      techstack: "MERN Stack,Chakra UI,HTML,CSS",
-      livelink:"https://project-medicare-fp24844q1-fullstackcrud.vercel.app/",
-      gitlink: "https://github.com/Prakashkumarjena700/Project_Medicare",
-    },
+   
 
-    {
-      name: "1800.flowers.com",
-      img: "https://user-images.githubusercontent.com/109611448/213923457-9a382633-b69c-4c7b-bb37-3212faacc999.png",
-      type: "Group",
-      desc: "1-800-Flowers.com, Inc. is a floral and foods gift retailer and distribution company in the United States. The company's focus, except for Mother's Day and Valentine's Day, is on gift baskets., . ,..",
-      techstack: "MERN Stack,Chakra UI,HTML,CSS",
-      livelink: "https://frontend-seven-ebon.vercel.app/",
-      gitlink: "https://github.com/JyotiranjanGhibila/1800Flower.com",
-    },
+   
     {
       name: "YouTube",
       img: "https://user-images.githubusercontent.com/109611448/214076913-6da9ef54-8886-4d3d-9f18-8ce28e3ca239.png",
@@ -65,15 +85,7 @@ export default function Projects() {
       gitlink: "https://github.com/Janani1727/YouTube",
     },
 
-    {
-      name: "Rock-Paper-Scissors",
-      img: "https://user-images.githubusercontent.com/109611448/218800657-c22fa313-aff4-4a8f-ad75-d1611a5d7aad.png",
-      type: "Individual",
-      desc: " Rock paper scissors is a hand game, usually played between two people, in which each player simultaneously forms one of three shapes with an outstretched ....",
-      techstack: "HTML, CSS, React JS",
-      livelink: "https://rps-janani1727.vercel.app/",
-      gitlink: "https://github.com/Janani1727/Rock-Paper-Scissors",
-    },
+ 
 
     {
       name: "Intern Theory",
