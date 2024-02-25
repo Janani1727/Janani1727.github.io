@@ -34,7 +34,7 @@ const Skills = () => {
     <>
       <Box id="skills" border={"0px solid yellow"} marginTop={["110px", "200px", "200px"]} mb={"40px"}>
       
-        <Heading mr={["45%", "55%", "70%"]} fontSize={40} color={"#fe8a91"}>
+        <Heading mr={["45%", "55%", "70%"]} fontSize={40} color={"#00b9e8"}>
           Skills 
           <Text mt={"-45px"} marginLeft={["185px", "220px", "290px"]}>
             <SlSettings className="spin" color={"white"} />
@@ -240,7 +240,7 @@ const Skills = () => {
                   
               </Box>
 
-              <Heading border={"0px solid red"} mr={["58%", "69%", "80%"]}  mt={["50px","50px","20px"]} fontSize={40} color={"#fe8a91"}>
+              <Heading border={"0px solid red"} mr={["58%", "69%", "80%"]}  mt={["50px","50px","20px"]} fontSize={40} color={"#00b9e8"}>
          Tools
           <Text mt={"-45px"} marginLeft={["135px", "150px", "140px"]}>
             <SlSettings className="spin" color={"white"} />
@@ -331,13 +331,14 @@ const Skills = () => {
           </Box>
           </Fade>
           <Fade right>
-          <Box width={["0%","0%","80%"]} ml={["0px","0px","100px"]} border={"0px solid yellow"}>
-          <Image
-                  rounded={["50%", "50%", "50%"]}   mt={"50px"}
-                  src="https://i.pinimg.com/originals/16/f5/20/16f5204718e98858b1d4466e911e90ed.gif"
-                  alt="img"
-                />
-          </Box>
+          <Box width={["0%", "0%", "80%"]} ml={["0px", "0px", "150px"]} border={"0px solid yellow"}>
+  <Image
+    rounded={["50%", "80%", "80%"]} mt={"-15px"}
+    src="https://img.freepik.com/premium-vector/girl-with-laptop-chair-freelance-studying-concept_113065-289.jpg"
+    alt="img"
+  />
+</Box>
+
           </Fade>
         </Box>
       </Box>

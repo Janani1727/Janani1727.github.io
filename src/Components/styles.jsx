@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Load = styled.div`
-    color: #ff6188;
+    color: #1877f2;
     width: 100vw;
     height: 100vh;
     font-family: Consolas, Menlo, Monaco, monospace;

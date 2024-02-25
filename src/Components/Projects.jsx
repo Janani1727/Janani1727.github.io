@@ -17,15 +17,15 @@ import { FaReact } from "react-icons/fa";
 
 export default function Projects() {
   let projectdata = [
-    {
-      name: "Chat App  - (Full Stack)",
-      img: "https://user-images.githubusercontent.com/109611448/260457232-f41d1de8-224e-4b0c-9ec3-0e2807541e5c.png",
-      type: "Individual",
-      desc: "Chat App! This application allows users to send messages and record audio in a chat-like interface,Send text messages and record audio messages ,Emoji support for adding fun to your messages.",
-      techstack: "MERN Stack,Chakra UI,HTML,CSS",
-      livelink: "https://exact-space-frontend-t8hu.vercel.app/",
-      gitlink: "https://github.com/Janani1727/exactSpace_Frontend",
-    },
+    // {
+    //   name: "Chat App  - (Full Stack)",
+    //   img: "https://user-images.githubusercontent.com/109611448/260457232-f41d1de8-224e-4b0c-9ec3-0e2807541e5c.png",
+    //   type: "Individual",
+    //   desc: "Chat App! This application allows users to send messages and record audio in a chat-like interface,Send text messages and record audio messages ,Emoji support for adding fun to your messages.",
+    //   techstack: "MERN Stack,Chakra UI,HTML,CSS",
+    //   livelink: "https://exact-space-frontend-t8hu.vercel.app/",
+    //   gitlink: "https://github.com/Janani1727/exactSpace_Frontend",
+    // },
     {
       name: "Tata 1mg - (Full Stack)",
       img: "https://user-images.githubusercontent.com/109611448/221431735-62052936-4778-495b-85b1-a79a2b79aae3.png",
@@ -180,7 +180,7 @@ export default function Projects() {
         mr={["10%", "54%", "70%"]}
         fontSize={40}
         mt={"20px"}
-        color={"#fe8a91"}
+        color={"#00b9e8"}
       >
         Projects
         <Text
@@ -214,7 +214,7 @@ export default function Projects() {
                   h={["95%", "100%", "98%"]}
                   W={["500px", "350px", "370px"]}
                   w={"full"}
-                  bg={"whitesmoke"}
+                  bg={"#D6E4F0"}
                   boxShadow={"2xl"}
                   rounded={"md"}
                   p={4}
@@ -229,7 +229,7 @@ export default function Projects() {
 
                   <Stack textAlign={"left"}>
                     <Heading
-                      color={"#ff6188"}
+                      color={"black"}
                       fontSize={["3xl", "3xl", "2xl"]}
                       textAlign={"left"}
                       fontFamily={"body"}
@@ -257,8 +257,8 @@ export default function Projects() {
                           ml={["1px", "40px", "20px"]}
                           h={"35px"}
                           w={"120px"}
-                          bgColor={"#ff6188"}
-                          border={"1px solid #ff6188"}
+                          bgColor={"black"}
+                          border={"1px solid #00b9e8"}
                           borderRadius={"5px"}
                           _hover={{ backgroundColor: "black", color: "white" }}
                         >
@@ -290,8 +290,8 @@ export default function Projects() {
                           ml={["-50px", "20px", "0px"]}
                           h={"35px"}
                           w={"120px"}
-                          bgColor={"#ff6188"}
-                          border={"1px solid #ff6188"}
+                          bgColor={"black"}
+                          border={"1px solid #00b9e8"}
                           borderRadius={"5px"}
                           _hover={{ backgroundColor: "black", color: "white" }}
                         >
@@ -321,8 +321,8 @@ export default function Projects() {
         </Grid>
       </Box>
       <Button
-        backgroundColor={"#ff6188"}
-        color={"white"}
+        backgroundColor={"#00b9e8"}
+        color={"black"}
         w={["40%", "30%", "15%"]}
         h={"50px"}
         borderRadius={"10px"}

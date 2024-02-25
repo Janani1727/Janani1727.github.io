@@ -3,7 +3,7 @@ import "../Components/styles"
 import Typewriter from "typewriter-effect";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { DownloadIcon } from "@chakra-ui/icons";
-import Resume from "../../src/Downloads/fw20_0358-Janani-Jayaraman-Resume.pdf"
+import Resume from "../../src/Downloads/Janani_Jayaraman_Resume.pdf"
 export default function Home() {
   return (
 
@@ -40,7 +40,7 @@ export default function Home() {
                   <a
                 onClick={()=>{
                   window.open(
-                    "https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link","_blank", "noreferrer"
+                    "https://drive.google.com/file/d/18QVq9kNXXjz_MdyMFABxEkN_kT0RMjCO/view?usp=sharing","_blank", "noreferrer"
                   )
                 }}
 
@@ -73,8 +73,8 @@ export default function Home() {
                 </a>
               </Box> */}
             </Box>
-            <Box p="5px" w={["75%", "70%", "45%"]} mt={["40px", "80px", "100px"]} rounded={["50%", "50%", "50%"]}>
-              <Image w="100%" rounded={["50%", "50%", "50%"]} ml={["50px", "10px", "8px"]} src="https://cdn.dribbble.com/users/1163294/screenshots/10976010/media/0e33d764bd5c0bf01de99f52de897192.gif" alt="img" />
+            <Box p="5px" w={["65%", "70%", "45%"]} mt={["40px", "80px", "100px"]} rounded={["50%", "50%", "50%"]}>
+              <Image w="100%" rounded={["50%", "50%", "50%"]} ml={["50px", "10px", "8px"]} src="https://static.vecteezy.com/system/resources/previews/002/794/133/original/young-woman-working-on-laptop-freelance-or-studying-concept-cute-trendy-illustration-in-flat-style-free-vector.jpg" alt="img" />
             </Box>
 
 

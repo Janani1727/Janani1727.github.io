@@ -3,7 +3,7 @@ import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/re
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
-import Resume from "../../src/Downloads/fw20_0358-Janani-Jayaraman-Resume.pdf"
+import Resume from "../../src/Downloads/Janani_Jayaraman_Resume.pdf"
 import "../Components/styles"
 // import { DownloadIcon } from "@chakra-ui/icons";
 
@@ -16,8 +16,6 @@ const links = [
   
 
 ];
-
-
 
 export default function Simple() {
   const { isOpen, onOpen, onClose } = useDisclosure();
@@ -44,12 +42,12 @@ useEffect(() => {
     <>
 
 
-      <Box  zIndex={1} bg={isscroll? "#fe8a91" : "#fe8a91"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"}  position={"fixed"} width={"100%"} marginTop={"-50px"} justifyContent={"center"}>
+      <Box  zIndex={1} bg={isscroll? "#00b9e8" : "#00b9e8"} fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "black"} marginTop={"-50px"}  position={"fixed"} width={"100%"}  justifyContent={"center"}>
       <Flex h={16}  justifyContent="space-between" alignItems={'center'}  gap={1}>
       <Link to="/">
         <Box display={"flex"}>
         {/* <Image src={J} w={"120px"}  h={"200px"}/> */}
-        <Text className='wobble'  ml={["20px","40px","50px"]} fontSize={["22px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "white"} > Janani
+        <Text className='wobble'  ml={["20px","40px","50px"]} fontSize={["22px", "2xl", "3xl"]}  fontWeight={isscroll? "600" : "400"}  color={isscroll? "black" : "black"} > Janani
         </Text>
         </Box>
       </Link>
@@ -90,7 +88,7 @@ useEffect(() => {
                 <a
                 onClick={()=>{
                   window.open(
-                    "https://drive.google.com/file/d/1DClxcKyEqmZsixEH5RkUihIg6d0AKaLN/view?usp=share_link","_blank", "noreferrer"
+                    "https://drive.google.com/file/d/18QVq9kNXXjz_MdyMFABxEkN_kT0RMjCO/view?usp=sharing","_blank", "noreferrer"
                   )
                 }}
 
