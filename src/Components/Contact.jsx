@@ -73,7 +73,7 @@ const Contact = () => {
               <Text mt={"10px"}>
                 <SiGmail color="white" />
               </Text>
-              <Text> jayaramanjanani73@gmail.com</Text>
+              <Text> jananijayaraman09@gmail.com</Text>
             </Box>
 
             <Box

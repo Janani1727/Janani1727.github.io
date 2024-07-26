@@ -3,7 +3,7 @@ import {Box,Flex,HStack,IconButton,useDisclosure,Stack,Text} from '@chakra-ui/re
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
  import NavLink from "../Components/Navlink"
 import { Link } from 'react-scroll';
-import Resume from "../../src/Downloads/Janani_Jayaraman_Resume.pdf"
+import Resume from "../../src/Downloads/Janani-Jayaraman-Resume.pdf"
 import "../Components/styles"
 // import { DownloadIcon } from "@chakra-ui/icons";
 
@@ -18,6 +18,7 @@ const links = [
 ];
 
 export default function Simple() {
+  
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const [isscroll, setisscroll] = useState(false);
@@ -88,7 +89,7 @@ useEffect(() => {
                 <a
                 onClick={()=>{
                   window.open(
-                    "https://drive.google.com/file/d/18QVq9kNXXjz_MdyMFABxEkN_kT0RMjCO/view?usp=sharing","_blank", "noreferrer"
+                    "https://drive.google.com/file/d/1E8KPSmaLYfCc5-VmZ4QDLg8Z05JO-vSJ/view","_blank", "noreferrer"
                   )
                 }}
 
@@ -137,3 +138,4 @@ useEffect(() => {
 </>
 );
 }
+

@@ -9,3 +9,13 @@ body{
   text-align: center;
 
 }
+/* App.css */
+.cursor-nav-hover {
+  .cursor-inner {
+    background: #000; /* Change to the desired color when hovering */
+  }
+
+  .cursor-outer {
+    border-color: #000; /* Change to the desired color when hovering */
+  }
+}

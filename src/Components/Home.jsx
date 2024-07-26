@@ -3,7 +3,7 @@ import "../Components/styles"
 import Typewriter from "typewriter-effect";
 import { AiOutlineGithub, AiOutlineLinkedin } from "react-icons/ai"
 import { DownloadIcon } from "@chakra-ui/icons";
-import Resume from "../../src/Downloads/Janani_Jayaraman_Resume.pdf"
+import Resume from "../../src/Downloads/Janani-Jayaraman-Resume.pdf"
 export default function Home() {
   return (
 

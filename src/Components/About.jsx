@@ -27,8 +27,9 @@ export default function Home() {
             alignItems="center"
           >
             <Image
-              w={["50%", "30%", "25%"]}
-              marginTop={"50%"}
+              w={["50%", "30%", "30%"]}
+              
+              marginTop={"70%"}
               borderRadius={"10px"}
               m="auto"
               src={logo}

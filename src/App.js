@@ -11,7 +11,7 @@ import Loader from "./Components/Loader";
 import { useState, useEffect } from "react";
 import { Box } from "@chakra-ui/react";
 import HeroImg from "./Components/Home";
-// import Particle from "./Components/Particle";
+
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -29,7 +29,7 @@ function App() {
       <AnimatedCursor
         innerSize={10}
         outerSize={30}
-        color="0, 185, 232"
+        color="255, 255, 255"
         outerAlpha={0.4}
         innerScale={0.6}
         outerScale={0}
@@ -54,3 +54,5 @@ function App() {
 }
 
 export default App;
+
+
